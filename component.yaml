@@ -9,6 +9,12 @@ inputs:
   title: Gradle task name
   description: Specifies detekt task name.
   helpText:
+- key: "AC_DETEKT_OUTPUT_PATH"
+  defaultValue: "$AC_DETEKT_OUTPUT_PATH"
+  isRequired: true
+  title: Detekt Output Path
+  description: If `AC_DETEKT_SAVE_REPORT` variable is set true and this value is not defined, default path (`<ac_module>/build/reports`) will be defined.
+  helpText:
 - key: "AC_DETEKT_EXTRA_PARAMETERS"
   isRequired: false
   title: Scanner Parameters
